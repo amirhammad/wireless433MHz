@@ -52,6 +52,7 @@ void Communication::parse()
 
 Communication::Communication(QObject *parent)
 	: QObject(parent)
+	, m_fd(-1)
 	, m_index(0)
 	, m_sendIndex(0)
 {
